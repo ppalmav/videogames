@@ -1,0 +1,6 @@
+*.env
+.gitignore
+*.gitignore
+.git.bfg-report/*
+/.git.bfg-report
+bfg*.jar
