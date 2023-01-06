@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './container/App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import dotenv from 'dotenv';
+import axios from 'axios';
+dotenv.config()
+
+axios.defaults.baseURL = process.env.CLIENT_PORT || "http://localhost:3031"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+         <BrowserRouter>
+            <App />
+         </BrowserRouter>
+      </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

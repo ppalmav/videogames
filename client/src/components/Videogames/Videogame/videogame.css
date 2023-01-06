@@ -1,0 +1,95 @@
+.container-game {
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    flex-flow: column wrap;
+    align-items: flex-end stretch;
+    border: 1px solid black;
+    /* height: 25em; */
+    width: 20em;
+    /* width: 193px; */
+    /* height: 290px; */
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px inset; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;  
+
+}
+
+
+
+.title-game {
+    /* display: flex;
+    align-self: flex-start; */
+    /* margin-top: 10em; */
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: white;
+    margin-bottom: 10em;
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* line-clamp: 4; */
+    /* margin-bottom: 20px; */
+    font-family: 'Ink Free','Segoe Print';
+    font-size:large;
+    font-weight: 600;
+    
+    padding: 0 .3em .3em .3em;
+    width: 17em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.info {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-self: flex-end; */
+    /* justify-content: center; */
+    /* text-align: justify; */
+    /* margin-top: 15em; */
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    padding: 0 .3em .3em .3em;
+    width: 19em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+}
+
+.star{
+    color:#eeb50c;
+    font-size: large;
+}
+
+.div-button {
+    margin-left: 12.5em;
+    
+    /* display: flex; */
+
+    /* justify-content: flex-end; */
+}
+
+button {
+    cursor: pointer;
+    background-color: #eeb50c;
+}
+
+.Link {
+    font-family: 'Ink Free','Segoe Print';
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: black;
+}
+
+.Link:hover {
+    background-color: black;
+    color: #eeb50c;
+}

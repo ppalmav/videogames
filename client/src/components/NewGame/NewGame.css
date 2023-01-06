@@ -1,0 +1,119 @@
+.main-add {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+textarea {
+    resize: none;
+}
+.container-add {
+
+    text-align: center;
+    margin: 10px;
+    /* margin-top: 5em; */
+    padding: 20px;
+    width: 400px;
+    height: 650px;
+}
+
+.container-add h4 {
+    
+    text-align: center;
+    font-family: 'Ink Free','Segoe Print';
+    font-size: x-large;
+    color:white;
+    margin:0.5em;
+    background-color:rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+}
+
+.div-cont {
+    display: flex;
+    justify-content: center;
+}
+
+.dyr {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.gyp-div{
+    justify-content: center;
+    /* display: flex;
+    flex-flow: row; */
+
+}
+.genres-div {
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width:650px;
+    border-radius: 3px;
+    background-color: #eeb50c;
+}
+
+.plat-div {
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width:650px;
+    border-radius: 3px;
+    background-color: #eeb50c;
+}
+@media (max-width:800px){
+    .genres-div {
+        width: 90%;
+    }
+    .plat-div{
+        width: 90%;
+    }
+}
+
+
+.container-add label {
+    font-size: large;
+    margin: 3px;
+}
+
+.name{
+    height: 25px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.dt {
+    height: 25px;
+    width: 120px;
+    border-radius: 3px;
+}
+
+.div-but-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.div-but-form button {
+    font-family: 'Ink Free','Segoe Print';
+    padding: 10px;
+    /* margin: 2em; */
+    border-radius: 2px;
+    background-color: #eeb50c;
+}
+
+.div-but-form button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.container-add input {
+    background-color: #eeb50c;
+}
+
+.container-add textarea {
+    background-color: #eeb50c;
+}

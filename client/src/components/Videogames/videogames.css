@@ -1,0 +1,13 @@
+.games-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.notfound{
+    width: 800px;
+}
+
+.loading {
+    width: 500px;
+    background-color:rgba(0, 0, 0, 0.5);
+}

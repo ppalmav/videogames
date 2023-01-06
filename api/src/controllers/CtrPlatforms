@@ -1,0 +1,27 @@
+require('dotenv').config();
+const { APIKEY, API_URL } = process.env;
+const { Router } = require('express');
+const router = Router();
+const axios = require('axios').default;
+
+async function getAllPlatforms(){
+    let pages = 0;
+    let allPlatforms = [];
+    let response = await axios.get(API_URL + `/games?key=${APIKEY}`);
+    while (pages < 7) {
+        pages++;
+        response.data.results.map(game => {
+                //return game.platforms.map(p => p.platform.name)
+            //allPlataforms=allPlataforms.concat(game.platforms.map(p => p.platform.name))
+            allPlatforms=[...allPlatforms, ...game.platforms.map(p => p.platform.name)] 
+        }); 
+        if(pages<7)response = await axios.get(response.data.next) //vuelvo a llamar a la API con next
+    }
+    // allPlataforms.flat(2)
+    const arrPlatforms = Array.from(new Set(allPlatforms)).sort();
+    console.log(arrPlatforms);
+    return arrPlatforms;
+}
+
+
+module.exports = getAllPlatforms;

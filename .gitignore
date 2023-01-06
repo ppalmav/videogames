@@ -2,3 +2,5 @@
 .git.bfg-report/*
 /.git.bfg-report
 bfg*.jar
+/node_modules/*
+/client/node_modules/*
