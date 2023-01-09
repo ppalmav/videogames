@@ -137,7 +137,7 @@ function NewGame({wasCreated,createGame,history,getPlatforms,allPlatforms,cleanG
                         <br />
                         <textarea className="name" name='description' placeholder='Description...' id="description" cols="30" rows="3" required />
                         <br />
-                    <div>
+                    <div className='dyr'>
                         <label htmlFor="date" className="title-name"><strong>Release Date: </strong></label>
                         {/* <br /> */}
                         <input name='releaseDate' className="dt" type="date" id="date" max={new Date().toISOString().substring(0,10)} required />

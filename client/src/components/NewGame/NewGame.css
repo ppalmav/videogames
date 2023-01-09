@@ -35,7 +35,8 @@ textarea {
 .dyr {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+    flex-flow: row;
 }
 .gyp-div{
     justify-content: center;

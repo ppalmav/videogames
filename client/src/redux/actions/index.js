@@ -1,4 +1,4 @@
-import axios from '../../../node_modules/axios';
+import axios from 'axios';
 
 export const GET_ALL_GAMES = 'GET_ALL_GAMES';
 export const SEARCH_BY_NAME = 'SEARCH_BY_NAME';

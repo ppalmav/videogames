@@ -6,11 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux/store';
-import dotenv from 'dotenv';
+// import dotenv from 'dotenv';
 import axios from 'axios';
-dotenv.config()
+const HOST_URI = "http://localhost"
+const PORT_URI = "3031"
+// dotenv.config()
 
-axios.defaults.baseURL = process.env.CLIENT_PORT || "http://localhost:3031"
+// axios.defaults.baseURL = process.env.API_PORT || "http://localhost:3031"
+axios.defaults.baseURL = HOST_URI + ':' + PORT_URI
 
 ReactDOM.render(
   <React.StrictMode>
